@@ -12,3 +12,4 @@ The goal of this project is provide the reference code to:
 - [ ] Have the newly added tests autodiscovered.
 - [ ] Have it run its "test" on some public CI/CD.
 - [ ] Do all of the above in such that the very code directory is not polluted by `cmake` artifacts and build results.
+- [ ] A target for `clang-format`.
