@@ -2,12 +2,12 @@
 
 The goal of this project is provide the reference code to:
 
-- [ ] Use `cmake`.
-- [ ] Ensure the auto [re-]{configure/build} only does what has to be done.
-- [ ] Have the project integrate with `googletest`.
-- [ ] Have the project integrate with `ctest`.
-- [ ] Have it work on Linux, from the command line.
-- [ ] Have it work on Linux from Qt Creator.
+- [x] Use `cmake`.
+- [x] Ensure the auto [re-]{configure/build} only does what has to be done.
+- [x] Have the project integrate with `googletest`.
+- [x] Have the project integrate with `ctest`.
+- [x] Have it work on Linux, from the command line.
+- [x] Have it work on Linux from Qt Creator.
 - [ ] Have it work on Windows, under Visual Studio 2017/2019.
 - [ ] Have the newly added tests autodiscovered.
 - [ ] Have it run its "test" on some public CI/CD.
