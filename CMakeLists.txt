@@ -9,7 +9,7 @@ if (WIN32)
   add_definitions(/bigobj)
 endif(WIN32)
 
-set(CMAKE_VERBOSE_MAKEFILE ON)
+set(CMAKE_VERBOSE_MAKEFILE OFF)
 
 find_package(Threads REQUIRED)
 set(THREADS_PREFER_PTHREAD_FLAG ON)
