@@ -1,0 +1,4 @@
+BasedOnStyle: Google
+ColumnLimit: 120
+BinPackParameters: false  # Allow either all parameters on one line or one parameter per line, no packing.
+BinPackArguments: false   # The same for function calls.

@@ -1,4 +1,4 @@
-.PHONY: all configure build run test clean
+.PHONY: all configure build run test clean indent
 
 SRCS=$(wildcard *.cc)
 HEADERS=$(wildcard *.h)
@@ -25,3 +25,6 @@ run: ${BUILD_DIR}/build.ok ${BUILD_DIR}/example ${SRCS} ${HEADERS}
 	
 clean:
 	rm -rf ${BUILD_DIR} .vs/
+
+indent:
+	clang-format-10 -i ${SRCS} ${HEADERS}
