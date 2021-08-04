@@ -29,11 +29,11 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(test_one test_one.cc ${HEADERS})
-target_link_libraries(test_one PRIVATE Threads::Threads gtest_main)
-
-add_executable(test_two test_two.cc ${HEADERS})
-target_link_libraries(test_two PRIVATE Threads::Threads gtest_main)
-
-add_test(NAME test_one COMMAND test_one)
-add_test(NAME test_two COMMAND test_two)
+file(GLOB tests "${CMAKE_CURRENT_SOURCE_DIR}/test_*.cc")
+foreach(i ${tests})
+  get_filename_component(test_src "${i}" NAME)
+  get_filename_component(test_bin "${i}" NAME_WE)
+  add_executable(${test_bin} ${test_src} ${HEADERS})
+  target_link_libraries(${test_bin} PRIVATE Threads::Threads gtest_main)
+  add_test(NAME ${test_bin} COMMAND ${test_bin})
+endforeach()
