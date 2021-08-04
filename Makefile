@@ -24,4 +24,4 @@ run: ${BUILD_DIR}/build.ok ${BUILD_DIR}/example ${SRCS} ${HEADERS}
 	${BUILD_DIR}/example
 	
 clean:
-	rm -rf ${BUILD_DIR}
+	rm -rf ${BUILD_DIR} .vs/

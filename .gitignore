@@ -1,2 +1,5 @@
 # For QT Creator.
 CMakeLists.txt.user
+
+# For Visual Studio 2019.
+.vs
