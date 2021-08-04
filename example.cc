@@ -2,4 +2,7 @@
 
 #include "header.h"
 
-int main() { std::cout << "2 + 5 is " << sum(2, 5) << ", and 2 * 5 is " << mul(2, 5) << std::endl; }
+int main() {
+  std::cout << "3 + 7 is " << sum(3, 7) << ", and ";
+  std::cout << "3 * 7 is " << mul(3, 7) << std::endl;
+}
