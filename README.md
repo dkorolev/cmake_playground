@@ -1,5 +1,7 @@
 # cmake_playground
 
+**NOTE**: https://github.com/dkorolev/cmake_playground_with_current is a bit more up to date.
+
 The goal of this project is provide the reference code to:
 
 - [x] Use `cmake`.
